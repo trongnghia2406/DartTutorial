@@ -6,8 +6,12 @@ void main(List<String> args) {
       print("Dừng vòng lặp tại i = $i");
       break; // Dừng vòng lặp khi i bằng 5
     }
+    if(i == 3){
+      print("Bỏ qua lần lặp thứ $i");
+      continue; // Bỏ qua lần lặp khi i bằng 3
+    }
   }
-  // Kết quả: Lần lặp thứ 0, Lần lặp thứ 1, ..., Lần lặp thứ 5, Dừng vòng lặp tại i = 5
+  // Kết quả: Lần lặp thứ 0, Lần lặp thứ 1, Lần lặp thứ 2, Bỏ qua lần lặp thứ 3, Lần lặp thứ 4, Dừng vòng lặp tại i = 5
   int tong = 0;
   for (int i = 1; i < 5; i++){
     tong += i;
